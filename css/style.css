@@ -1,0 +1,45 @@
+.back-color{
+    background-color:#42c507;
+}
+html,body{
+    height:100%;
+    padding:5px;
+}
+body{
+    color:#ffffff;
+}
+/* index.html */
+#index{
+    text-align: center;
+}
+#index .div-title{
+    height: 20%;
+}
+#index input[name="food-image"]{
+    display: none;
+}
+#index button{
+    position:relative;
+    width:60%;
+    height:50%;
+    border:none;
+    background-color:white;
+    border-radius:10px;
+    box-shadow:0 4px #000000;
+    top:0px;
+    /*transition:all 0.3s;*/
+}
+    #index button:active{
+        position:relative;
+        box-shadow:none;
+        top:4px;
+        transition:all 0.3s;
+    }
+#index .div-img{
+    height:50%;
+}
+#index .div-img img{
+    height:100%;
+    width:90%;
+    border:none;
+}
