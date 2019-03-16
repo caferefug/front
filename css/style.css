@@ -62,11 +62,12 @@ button{
     text-align: center;
 }
 #history .row-header input{
-    height:30%;
+    height:40%;
     width:60%;
     margin-bottom:10px;
     border-radius: 20px;
-    text-align: center
+    text-align: center;
+    font-size:7px;
 }
 #history .row-header button{
     border-radius: 50% 50%;
