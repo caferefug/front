@@ -1,13 +1,14 @@
 .back-color{
-    background-color:#42c507;
+    background-color:#66c92d;
 }
 html,body{
     height:100%;
     padding:5px;
-    background-color:#42c507;
+    background-color:#66c92d;
 }
 body{
     color:#ffffff;
+    font-size:8px;
 }
 button{
     position:relative;
@@ -19,7 +20,7 @@ button{
     box-shadow:0 4px #000000;
     top:0px;
     color:#42c507;
-    font-size:24px;
+    font-size:20px;
     transition:all 0.2s;
 }
     button:active{
@@ -55,6 +56,21 @@ button{
     border:none;
 }
 /* history.html */
+#history .row-header{
+    height:20%;
+    font-size:20px;
+    text-align: center;
+}
+#history .row-header input{
+    height:30%;
+    width:60%;
+    margin-bottom:10px;
+    border-radius: 20px;
+    text-align: center
+}
+#history .row-header button{
+    border-radius: 50% 50%;
+}
 #history .row-input{
     height:15%;
     text-align:center;
@@ -67,8 +83,8 @@ button{
     height:80%;
 }
 #history .img-result{
-    width:80%;
-    height:auto;
+    height: 100%;
+    width:auto;
     border-radius:20px;
 }
 #history .img-wrap{
