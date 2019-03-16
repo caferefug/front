@@ -4,9 +4,37 @@
 html,body{
     height:100%;
     padding:5px;
+    background-color:#42c507;
 }
 body{
     color:#ffffff;
+}
+button{
+    position:relative;
+    width:60%;
+    height:50%;
+    border:none;
+    background-color:white;
+    border-radius:10px;
+    box-shadow:0 4px #000000;
+    top:0px;
+    color:#42c507;
+    font-size:24px;
+    transition:all 0.2s;
+}
+    button:active{
+        position:relative;
+        box-shadow:none;
+        top:4px;
+        transition:all 0.2s;
+    }
+.center-content{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
 }
 /* index.html */
 #index{
@@ -18,28 +46,40 @@ body{
 #index input[name="food-image"]{
     display: none;
 }
-#index button{
-    position:relative;
-    width:60%;
-    height:50%;
-    border:none;
-    background-color:white;
-    border-radius:10px;
-    box-shadow:0 4px #000000;
-    top:0px;
-    /*transition:all 0.3s;*/
-}
-    #index button:active{
-        position:relative;
-        box-shadow:none;
-        top:4px;
-        transition:all 0.3s;
-    }
 #index .div-img{
     height:50%;
 }
 #index .div-img img{
-    height:100%;
+    height:auto;
     width:90%;
     border:none;
+}
+/* history.html */
+#history .row-input{
+    height:15%;
+    text-align:center;
+}
+#history .getImgBtn{
+    height:100%;
+    width:50%;
+}
+#history .row-result{
+    height:80%;
+}
+#history .img-result{
+    width:80%;
+    height:auto;
+    border-radius:20px;
+}
+#history .img-wrap{
+    position:relative;
+    width:80%;
+    height:150px;
+    margin-right:auto;
+    margin-left:auto;
+    border-radius:20px;
+    padding:5px;
+    margin-bottom:10px;
+    margin-top:10px;
+    background-color:#ffffff;
 }
