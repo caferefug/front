@@ -20,7 +20,7 @@ const getImg=function(userId,page){
         let delayTime=0;
         const initApyTime=300;
         for(let i=0;i<10;i++){
-            $('.row-result>div').append('<div class="img-wrap"><img src="hondana.jpg" class="img-result center-content"></div>').hide().show(initApyTime+delayTime);
+            $('.row-result>div').append('<div class="img-wrap"><img src="hondana.jpg" class="img-result center-content"></div>').hide().fadeIn(initApyTime+delayTime);
             delayTime+=100;
         }
     })
