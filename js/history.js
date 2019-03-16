@@ -25,8 +25,7 @@ $(function(){
 const getImg=function(userId,page){
     $.ajax({
         url: "https://trunk-hackathon.herokuapp.com/history.php?page=1&tero_id=1",
-        type: "POST",
-        dataType: "json"
+        type: "GET",
     }).done((res)=>{
         console.log(res);
         let imgName=res.data;
