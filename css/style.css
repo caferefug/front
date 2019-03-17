@@ -1,3 +1,6 @@
+.hidden{
+    display: none;
+}
 .back-color{
     background-color:#66c92d;
 }
@@ -100,4 +103,49 @@ button{
     margin-bottom:10px;
     margin-top:10px;
     background-color:#ffffff;
+}
+/* ranking.html */
+#ranking header{
+    height: 20%;
+}
+#ranking header button{
+    width:50%;
+    box-shadow: none;
+    outline: none;
+    border-radius: 0;
+}
+#ranking .content{
+    font-size:20px;
+}
+.deactive{
+    color:#ffffff;
+    background-color:#66c92d;
+    border:solid 2px #ffffff;
+}
+#ranking canvas{
+    height:500px;
+}
+#ranking article{
+    height:80%;
+}
+#ranking .content-item{
+    height:20%;
+    width:90%;
+    text-align:center;
+    background-color:#42c507;
+    margin-right:auto;
+    margin-left:auto;
+    font-size:28px;
+    box-shadow: 0 3px 4px #000000;
+    margin-bottom:8px;
+}
+#loading{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    height:100px;
+    width:100px;
 }

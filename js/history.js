@@ -36,6 +36,7 @@ const getImg=function(userId,page){
         url: "https://trunk-hackathon.herokuapp.com/history.php?page=1&tero_id=1",
         type: "GET",
     }).done((res)=>{
+        $('#loading').hide();
         let imgName=res;
         let delayTime=0;
         const initAplyTime=200;
@@ -48,14 +49,7 @@ const getImg=function(userId,page){
             delayTime+=200;
         }
     }).fail((error)=>{
-        let delayTime=0;
-        const initAplyTime=200;
-        for(let i=fstCard;i<endCard;i++){
-            $('.row-result div[class^="col-"]').append('<div class="img-wrap"><img src='+BASE_URL+' class="img-result center-content"></div>');
-        }
-        for(let i=fstCard;i<endCard;i++){
-            $('.img-wrap').eq(i).delay(initAplyTime+delayTime).fadeIn(initAplyTime);
-            delayTime+=200;
-        }
+        $('#loading').hide();
+        console.log('データを取得できませんでした');
     })
 }
