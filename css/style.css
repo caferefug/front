@@ -149,3 +149,8 @@ button{
     height:100px;
     width:100px;
 }
+/* feedback.html */
+#feedback img{
+    width:30%;
+    height:auto;
+}

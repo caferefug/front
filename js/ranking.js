@@ -20,7 +20,7 @@ $(function(){
     }).done((res)=>{
         $('#loading').hide();
         console.log(res);
-        for(let i=0;i<10;i++){
+        for(let i=0;i<res.length;i++){
             datas[i]=res[i].score;
             if(res[i].user_name!=false){
                 names[i]=res[i].user_name
@@ -28,8 +28,8 @@ $(function(){
                 names[i]="名無し"
             }
         }
-        for(let i=0;i<10;i++){
-            $('.ranking-area .content').append('<div class="content-item">'+(i+1)+'位'+'<br>'+names[i]+'<br>'+datas[i]+'票</div>');
+        for(let i=0;i<res.length;i++){
+            $('.ranking-area .content').append('<div class="content-item">'+(i+1)+'位&ensp;'+names[i]+'<br>'+datas[i]+'票</div>');
         }
         lineChart=new Chart(ctx, {
             type: 'bar',

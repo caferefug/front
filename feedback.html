@@ -7,25 +7,20 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/ranking.js"></script>
-    <title>Document</title>
+    <script src="js/feedback.js"></script>
+    <title>Feedback</title>
 </head>
-<body class="container" id="ranking">
+<body class="container" id="history" ontouchstart="">
     <img id="loading" src="images/loading.gif">
-    <header class="row">
+    <div class="row row-result">
         <div class="col-12">
-            <h2>飯テロランキング</h2>
-            <button type="button">ランキング</button><button type="button" class="deactive">いいね！数</button>
+            <h2>何人がターゲットになっています</h2>
         </div>
-    </header>
-    <article class="row ranking-area">
-        <div class="col-12 content">
+    </div>
+    <div class="row row-feedback">
+        <div class="col-12">
+            <h2>何人がフィードバックしています</h2>
         </div>
-    </article>
-    <article class="row feedback-area hidden">
-        <div class="col-12 content">
-            <canvas id="feedback-graph"></canvas>
-        </div>
-    </article>
+    </div>
 </body>
 </html>

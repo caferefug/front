@@ -7,6 +7,7 @@ let endCard=10;
 let cardNum=10;
 let userId=null;
 $(function(){
+    $('#loading').hide();
     $('#idSendBtn').on('click',function(){
         userId=Number($('#userId').val());
         if(userId!=null){
@@ -15,7 +16,6 @@ $(function(){
         }
     })
     if(userId!=null){
-        //リロード時ajaxで全権取得
         $(window).bottom({proximity: 0.10});
         $(window).bind('bottom',function(){
             var obj=$(this);
@@ -32,6 +32,7 @@ $(function(){
 });
 
 const getImg=function(userId,page){
+    $('#loading').show();
     $.ajax({
         url: "https://trunk-hackathon.herokuapp.com/history.php?page=1&tero_id=1",
         type: "GET",
