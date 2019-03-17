@@ -7,14 +7,16 @@ let endCard=10;
 let cardNum=10;
 let userId=null;
 $(function(){
-    $('#loading').hide();
-    $('#idSendBtn').on('click',function(){
-        userId=Number($('#userId').val());
-        if(userId!=null){
-            $('.row-header').fadeOut();
-            getImg(1,userId);
+    liff.init(
+        data => {
+          // Now you can call LIFF API
+          userId = data.context.userId;
+        },
+        err => {
+          // LIFF initialization failed
         }
-    })
+      );      
+    $('#loading').hide();
     if(userId!=null){
         $(window).bottom({proximity: 0.10});
         $(window).bind('bottom',function(){
@@ -34,7 +36,7 @@ $(function(){
 const getImg=function(userId,page){
     $('#loading').show();
     $.ajax({
-        url: "https://trunk-hackathon.herokuapp.com/history.php?page=1&tero_id=1",
+        url: "https://trunk-hackathon.herokuapp.com/history.php?page=1&tero_id="+userId,
         type: "GET",
     }).done((res)=>{
         $('#loading').hide();

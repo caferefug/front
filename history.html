@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -12,13 +13,6 @@
 </head>
 <body class="container" id="history" ontouchstart="">
     <img id="loading" src="images/loading.gif">
-    <div class="row row-header">
-        <div class="col-12">
-            <p>ユーザーIDを入力してください</p>
-            <input type="number" id="userId" required>
-            <button type="button" id="idSendBtn">送信</button>
-        </div>
-    </div>
     <div class="row row-result">
         <!-- 画像検索結果を表示 -->
         <div class="col-12">
