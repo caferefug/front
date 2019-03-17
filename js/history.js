@@ -41,7 +41,6 @@ const getImg=function(userId,page){
         let imgName=res;
         let delayTime=0;
         const initAplyTime=200;
-        console.log(BASE_URL+imgName[1].data);
         for(let i=fstCard;i<endCard;i++){
             $('.row-result div[class^="col-"]').append('<div class="img-wrap"><img src='+BASE_URL+imgName[i].data+' class="img-result center-content"></div>');
         }
